@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color: #0F0F0F;">   
+
+
+    <div style="display: flex;margin-left: 100px;margin-right: 100px;margin-top: 50px;border-radius: 30px;background-color: #232D3F;">
+
+
+<!-- Questa è la parte di compilazione -->
+        <div style="position: absolute;width: 1705px;height: 830px;border-radius: 30px;background-color: rgba(0, 0, 0, 0.3);display: flex;align-items: center;justify-content: center;display: none;">
+
+            <!-- display: block; -->
+
+            <div style="position: absolute;top: 10px;right: 30px;cursor: pointer;">
+                <i class="fa fa-close" style="font-size:36px"></i>
+            </div>
+  
+            <div style="width: 300px;padding: 20px;border-radius: 30px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);margin: 20px;background-color: #0F0F0F;display: flex;flex-direction: column;">
+
+                <h2 style="color: wheat;text-align: center;">Inserisci contatto</h2>
+
+                <form>
+
+                    <div style="margin-bottom: 30px;">
+
+                        <label style="display: block;margin-bottom: 5px;color: wheat;" for="firstName">Nome:</label>
+
+                        <input style=" width: 250px;padding: 8px;border-radius: 4px;border: 1px solid #161515;" type="text" id="firstName" name="firstName" required>
+                 
+                    </div>
+
+                    <div style="margin-bottom: 30px;">
+
+                        <label style="display: block;margin-bottom: 5px;color: wheat;" for="lastName">Cognome:</label>
+
+                        <input style=" width: 250px;;padding: 8px;border-radius: 4px;border: 1px solid #161515;" type="text" id="lastName" name="lastName" required>
+                  
+                    </div>
+
+                    <div style="margin-bottom: 150px;">
+
+                        <label style="display: block;margin-bottom: 5px;color: wheat;" for="phoneNumber">Numero di telefono:</label>
+
+                        <input style=" width: 250px;;padding: 8px;border-radius: 4px;border: 1px solid #161515;" type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+                  
+                    </div>
+
+                    <button style="margin-left: 110px;padding: 10px 15px;background-color: #008170;color: wheat;border: none;border-radius: 4px;cursor: pointer;" type="submit">Invia</button>
+                
+                </form>
+
+            </div>
+
+            
+
+        </div>
+<!-- Questa è la parte di ricerca  -->
+        <div style="height: 90vh;flex: 1;border-top-left-radius: 30px;border-bottom-left-radius: 30px;display: flex; flex-direction: column;border-right: 2px solid rgba(255, 255, 255, 0.4);;">
+
+            <div style="display: flex;">
+
+                <img style="height: 7vh;margin-top: 40px;margin-left: 20px;border: 2px solid white;border-radius: 50%;" src="luffy_icon_by_classy_blue_dauuj70-fullview.png" alt="">
+
+                <p style="height: 20px;margin-top: 60px; margin-left: 20px;font-size: larger;color: white;">Alessandro Gennari</p>  
+
+            </div>
+
+            <div style="display: flex;background-color: #232D3F">
+
+                <div style="height: 40px;width: 170px; border-radius: 30px;margin: 25px;background-color: #0F0F0F;display: flex;">
+
+                    <i class="fa fa-search" style="font-size:24px;margin: 7px;color: #008170;"></i>
+
+                    <input style="height: 35px;width: 110px;margin: 2px;border: none;background-color: #0F0F0F;outline: none; color: white;" type="text" name="" id="" placeholder="Cerca contatto...">
+    
+                </div>
+
+                <div style="margin-left: px;margin-top: 32px;margin-bottom: 32px;cursor: pointer;">
+                    
+                    <i class="fa fa-user-plus" style="font-size:24px;color: #008170;"></i>
+
+                </div>    
+              
+            </div>
+
+        </div>
+<!-- Questa è la parte dove visualizzi e che modifica -->  
+        <div style="background-color: #232D3F;flex: 5;border-top-right-radius: 30px;border-bottom-right-radius: 30px;display: flex;flex-direction: column;padding: 30px;">
+
+            <div style="display: flex; border-bottom: 1px solid rgba(255, 255, 255, 0.4);height: 40px;">
+
+                <div style="flex: 1;">
+
+                    <h2 style="color: wheat;margin-left: 10px;margin-top: 9px;">Alessandro</h2>
+
+                </div>
+
+                <div style="flex: 1;">
+
+                    <h2 style="color: wheat;margin-left: 10px;margin-top: 9px;">Gennari</h2>
+
+                </div>
+
+                <div style="flex: 1;">
+
+                    <h2 style="color: wheat;margin-left: 10px;margin-top: 9px;">12235558465</h2>
+
+                </div>
+
+                <div style="flex: 1;display: flex;">
+
+                    <div style="height: 35px; border-radius: 10px;background-color: #008170;width: 100px;cursor: pointer;margin-left: 160px;margin-top: 3px;">
+                        
+                        <p style="margin-top: 8px;margin-left: 20px;">Modifica</p>
+                        
+                    </div>
+
+                    <div style="cursor: pointer;margin-left: 25px;">
+
+                        <i class="fa fa-close" style="font-size:40px;color: #008170;"></i>
+
+                    </div>
+                    
+                    
+                </div>
+
+                
+
+            </div>
+
+            <div style="display: flex; border-bottom: 1px solid rgba(255, 255, 255, 0.4);height: 60px;background-color: #005B41;">
+
+                <div style="flex: 1;">
+
+                    <div style="background-color:#0F0F0F;width: 200px;margin-top: 9px;margin-left: 30px;border-radius: 30px;">
+
+                        <input style="height: 35px;width: 160px;margin: 2px;margin-left: 15px;border: none;background-color: #0F0F0F;outline: none; color: white;border-radius: 30px;" type="text" name="" id="" placeholder="Nome">
+    
+                    </div>
+                </div>
+                
+                <div style="flex: 1;">
+                    <div style="background-color:#0F0F0F;width: 200px;margin-top: 9px;margin-left: 30px;border-radius: 30px;">
+
+                        <input style="height: 35px;width: 160px;margin: 2px;margin-left: 15px;border: none;background-color: #0F0F0F;outline: none; color: white;border-radius: 30px;" type="text" name="" id="" placeholder="Cognome">
+        
+                    </div>
+
+                </div>
+
+                <div style="flex: 1;">
+
+                    <div style="background-color:#0F0F0F;width: 200px;margin-top: 9px;margin-left: 30px;border-radius: 30px;">
+
+                        <input style="height: 35px;width: 160px;margin: 2px;margin-left: 15px;border: none;background-color: #0F0F0F;outline: none; color: white;border-radius: 30px;" type="text" name="" id="" placeholder="numero">
+        
+                    </div>
+
+                </div>
+
+                <div style="flex: 1;display: flex;">
+
+                    <div style="height: 35px; border-radius: 10px;background-color: #008170;width: 100px;cursor: pointer;margin-left: 1px;margin-top: 10px;">
+                        
+                        <p style="margin-top: 8px;margin-left: 30px;">Salva</p>
+                        
+                    </div>
+
+                    
+                    
+                </div>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+
